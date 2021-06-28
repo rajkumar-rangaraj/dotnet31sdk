@@ -1,0 +1,42 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:30301",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=61878eec-273f-ff4c-9137-5b4f716fa4f7",
+        //"DOTNET_ADDITIONAL_DEPS": "D:\\Code\\Mgmt-AppInsights-StatusMonitor\\target\\bin\\Debug\\ApplicationInsights.PreinstalledExtension\\ApplicationInsightsAgent.2.8.39\\2.8.39\\core\\additionalDeps",
+        //"DOTNET_SHARED_STORE": "D:\\Code\\Mgmt-AppInsights-StatusMonitor\\target\\bin\\Debug\\ApplicationInsights.PreinstalledExtension\\ApplicationInsightsAgent.2.8.39\\2.8.39\\core\\store",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.ApplicationInsights.StartupBootstrapper",
+        "DOTNET_STARTUP_HOOKS": "D:\\Code\\Mgmt-AppInsights-StatusMonitor\\target\\bin\\Debug\\DotNetCoreAgent\\StartupHook\\Microsoft.ApplicationInsights.StartupHook.dll",
+        "DISABLE_APPINSIGHTS_SDK": "1",
+        "IGNORE_APPINSIGHTS_SDK": "1",
+        //"STARTUP_BOOT_PATH": "D:\\Code\\Mgmt-AppInsights-StatusMonitor\\target\\bin\\Debug\\ApplicationInsights.PreinstalledExtension\\ApplicationInsightsAgent.2.8.38\\2.8.38\\core\\store\\x64\\netcoreapp3.1\\microsoft.applicationinsights.startupbootstrapper\\2.8.38.14250\\lib\\netcoreapp3.1\\Microsoft.ApplicationInsights.StartupBootstrapper.dll",
+        "HOME": "C:\\Temp"
+      }
+    },
+    "netcoreapp31test": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true
+    }
+  }
+}

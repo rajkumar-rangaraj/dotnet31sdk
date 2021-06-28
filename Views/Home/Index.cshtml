@@ -1,0 +1,37 @@
+﻿@using Shared;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Environment Variables</h1>
+    <div id="env">
+        <table border='1'>
+            <tr><td>Name</td><td>Value</td></tr>
+            @foreach (var env in EnvironmentVariable.GetEnvironmentVariables())
+            {
+                <tr>
+                    <td>@env.Name</td>
+                    <td>@env.Value</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <h1>Loaded DLLs</h1>
+    <div id="dll">
+        <table border='1'>
+            <tr><td>Name</td><td>Value</td></tr>
+            @foreach (var dll in LoadedDLL.GetLoadedDLLs())
+            {
+                <tr>
+                    <td>@dll.Name</td>
+                    <td>@dll.Location</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
